@@ -41,7 +41,7 @@ RogueLink/
 # Installation & Usage
 
 # Clone the repository
-git clone https://github.com/yourusername/RogueLink.git
+git clone https://github.com/layanalsuliman/RogueLink.git
 
 # Navigate to the project directory
 cd RogueLink
