@@ -3,36 +3,21 @@ RogueLink is a Python-based Evil Twin Attack tool for cybersecurity learning and
 It automates network scanning, deauthentication attacks, Evil Twin creation with a captive portal, and handshake capturing for WPA/WPA2 cracking experiments.
 The tool provides a user-friendly interactive menu and supports custom captive portals to simulate real-world phishing scenarios in a controlled environment.
 # Features
-1. Network Interface Management
-•	Select Interface: Choose a wireless network interface from available devices.
-•	Enable Monitor Mode: Switch the selected interface into monitor mode using airmon-ng.
-•	Disable Monitor Mode: Revert the interface back to managed mode.
-2. Target Exploration
-•	Explore Targets: Scan for nearby wireless networks and capture detailed information about SSIDs, BSSIDs, and channels.
-3. Deauthentication Attack
-•	RogueLink offers four different deauthentication attack modes:
-o	Manual Mode: Specify BSSID, victim MAC, and channel for targeted deauthentication.
-o	Auto Mode: Deauthenticate victim MAC across channels 1–50 automatically.
-o	Manual Broadcast Mode: Deauthenticate all clients (broadcast) on a specific channel.
-o	Auto Broadcast Mode: Broadcast deauthentication across channels 1–50.
-These options allow users to customize the aggressiveness and targeting of the attack based on their needs.
-4. Evil Twin Attack
-•	Launch Evil Twin: Create a fake access point with a captive portal to capture user credentials.
-•	Upload Custom Captive Portal: Replace the default captive portal with a custom-designed HTML template.
-5. Handshake Capture
-•	Capture 4-Way Handshake: Perform deauthentication and capture WPA/WPA2 handshakes from target networks, enabling offline password cracking.
-6. Report Generation
-•	Generate Report: Automatically generate a detailed text report including:
-o	Selected interfaces,
-o	Target BSSID and channel,
-o	SSID used for the Evil Twin,
-o	Captured credentials (if any).
-7. Combined Deauth + Evil Twin Attack
-•	Deauth + Evil Twin Attack: Launch a deauthentication attack first, then immediately start the Evil Twin attack for maximum effectiveness.
-8. WPA Handshake Cracking
-•	Crack WPA Handshake:
-o	Crack captured WPA/WPA2 handshakes using a custom wordlist.
-o	Optionally generate a wordlist automatically from captured portal credentials.
+1.	Select Network Interface
+2.	Enable Monitor Mode
+3.	Disable Monitor Mode
+4.	Explore Targets
+5.	Deauthentication Attack
+•	Manual Mode (Targeted deauth)
+•	Auto Mode (Across channels 1–50)
+•	Manual Broadcast Mode
+•	Auto Broadcast Mode
+6.	Evil Twin Attack
+7.	Upload Custom Captive Portal
+8.	Capture 4-Way Handshake
+9.	Generate Report
+10.	Deauth + Evil Twin Attack
+11.	Crack WPA Handshake
 
 # Project Structure 
 
