@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Glass Login</title>
+    <style>
+        body {
+            background: url('https://picsum.photos/seed/night/1920/1080') no-repeat center center/cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+        }
+        .glass {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+            width: 300px;
+            text-align: center;
+        }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+        }
+        input[type=submit] {
+            background-color: #03DAC6;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="glass">
+    <h2>Sign In</h2>
+    <form action="/login" method="POST">
+        <input type="text" placeholder="Username" name="username" required><br>
+        <input type="password" placeholder="Password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body { background-color: #f2f2f2; font-family: Arial, sans-serif; }
+        .login-box { background: #fff; padding: 20px; margin: 100px auto; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.3); border-radius: 10px; }
+        input[type=text], input[type=password] { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; }
+        input[type=submit] { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <input type="text" placeholder="Username" name="username" required><br>
+        <input type="password" placeholder="Password" name="password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>

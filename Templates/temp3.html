@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gradient Glass Login</title>
+    <style>
+        body {
+            background: url('https://picsum.photos/id/1005/1920/1080') no-repeat center center/cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .glass {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            border-image: linear-gradient(45deg, #f3ec78, #af4261) 1;
+            text-align: center;
+        }
+        input[type=text], input[type=password] {
+            width: 85%;
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(255,255,255,0.3);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+        }
+        input[type=submit] {
+            width: 90%;
+            padding: 12px;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="glass">
+    <h2>Login Portal</h2>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>
