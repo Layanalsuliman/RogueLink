@@ -24,7 +24,14 @@ The tool provides a user-friendly interactive menu and supports custom captive p
 
 # Project Structure 
 
-(RogueLink/ ├── logs/ # Captured credentials and reports ├── Templates/ # Pre-built captive portal templates ├── www/ # Web server root for Evil Twin captive portals ├── RogueLink.py # Main tool script └── README.md # Project documentation)
+```
+RogueLink/
+├── logs/           # Captured credentials and reports
+├── Templates/      # Pre-built captive portal templates
+├── www/            # Web server root for Evil Twin captive portals
+├── RogueLink.py    # Main tool script
+└── README.md       # Project documentation
+```
 
 # Requirements
 
