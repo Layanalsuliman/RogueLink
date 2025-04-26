@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/layanalsuliman/RogueLink/main/Templates/roguelink_logo.png" width="150" alt="RogueLink Logo">
+  <img src="Templates/roguelink_logo.png" alt="RogueLink Logo" width="250">
 </p>
 
 
