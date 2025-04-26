@@ -1,10 +1,7 @@
 <p align="center">
-  <img src="Templates/roguelink_logo.png" width="150" alt="RogueLink Logo">
+  <img src="https://raw.githubusercontent.com/layanalsuliman/RogueLink/main/Templates/roguelink_logo.png" width="150" alt="RogueLink Logo">
 </p>
 
-<h1 align="center">RogueLink</h1>
-
-<p align="center"><strong>Evil Twin Attack Tool</strong></p>
 
 # RogueLink
 RogueLink is a Python-based Evil Twin Attack tool for cybersecurity learning and awareness.
