@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glass Avatar Login</title>
+    <style>
+        body {
+            background: url('https://picsum.photos/1920/1080?grayscale') no-repeat center center/cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background: url('https://i.imgur.com/6VBx3io.png') center/cover;
+            display: inline-block;
+        }
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            background: rgba(255,255,255,0.3);
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+        }
+        input[type=submit] {
+            width: 95%;
+            padding: 12px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="glass">
+    <div class="avatar"></div>
+    <h2>Member Login</h2>
+    <form action="/login" method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>

