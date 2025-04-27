@@ -61,6 +61,18 @@ cd RogueLink
 ```
 sudo python3 RogueLink.py
 ```
+## Notes and Important Considerations
+
+### Apache Default Page Behavior
+- By default, the Apache server looks for a file named `index.html` to serve as the main page.
+- If you are using a custom captive portal template, ensure that your main HTML file is named `index.html`.
+- Otherwise, the server may not automatically load your custom page.
+
+### Capturing Credentials
+- Capturing user credentials is not automatically handled by custom captive portals.
+- If you wish to capture credentials (e.g., username and password), you must manually configure your HTML form to handle submissions appropriately.
+- Feel free to customize your portal to support credential logging as needed!
+
 # Disclaimer ⚠️
 
 RogueLink is created strictly for educational purposes, cybersecurity awareness, and authorized penetration testing environments.
